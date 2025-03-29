@@ -87,7 +87,7 @@ def create_picture():
 def update_picture(id):
     res = make_response()
     req_pic = request.json
-    if data or req_pic:
+    if data and req_pic:
         for i in range(0, len(data)):
             picture = data[i]
             if picture["id"] == id:
